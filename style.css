@@ -1,7 +1,6 @@
-/* Style untuk seluruh halaman */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
@@ -10,50 +9,91 @@ body {
 
 /* Header */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #ff5722;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Container untuk konten utama */
-.container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Call-to-action button */
-.cta {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.cta a {
-    background: #ff5722;
-    color: #fff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: #ff5722;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: white;
+    color: #ff5722;
+    padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.hero .cta-button:hover {
+    background: #fff3e0;
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
+    background: #333;
+    color: white;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #ff5722;
-    text-decoration: none;
 }
