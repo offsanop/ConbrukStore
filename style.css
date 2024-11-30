@@ -1,0 +1,59 @@
+/* Style untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ff5722;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Container untuk konten utama */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Call-to-action button */
+.cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta a {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
